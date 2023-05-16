@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 25px;
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+      .containter-two-col {
+        display: inline-block;
+        margin: 20px 0px;
+        width: 200px;
+      }
+      .containter-four-col {
+        display: inline-block;
+        margin: 20px 0px;
+        width: 100px;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        opacity: 1;
+      }
+    </style>
+    <title>Booking</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="containter-two-col">
+        <form action="">
+          <label for="flying-from" style="line-height: 2rem">
+            <strong>Flying from</strong>
+          </label>
+          <br />
+          <select id="flying-from" name="flying-from" style="width: 150px">
+            <option value="" selected>Please select</option>
+            <option value="Karachi Pakistan">Karachi Pakistan</option>
+            <option value="Bangkok Thailand">Bangkok Thailand</option>
+            <option value="Tokyo Japan">Tokyo Japan</option>
+            <option value="Seoul Korea">Seoul Korea</option>
+            <option value="Sydney Australia">Sydney Australia</option>
+            <option value="Islamabad Parkistan">Islamabad Parkistan</option>
+          </select>
+        </form>
+      </div>
+      <div class="containter-two-col">
+        <form action="">
+          <label for="flying-to" style="line-height: 2rem">
+            <strong>To</strong>
+          </label>
+          <br />
+          <select id="flying-to" name="flying-to" style="width: 150px">
+            <option value="" selected>Please select</option>
+            <option value="Karachi Pakistan">Karachi Pakistan</option>
+            <option value="Bangkok Thailand">Bangkok Thailand</option>
+            <option value="Tokyo Japan">Tokyo Japan</option>
+            <option value="Seoul Korea">Seoul Korea</option>
+            <option value="Sydney Australia">Sydney Australia</option>
+            <option value="Islamabad Parkistan">Islamabad Parkistan</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="containter-two-col">
+        <form action="">
+          <label for="departing" style="line-height: 2rem">
+            <strong>Departing</strong>
+          </label>
+          <br />
+          <input
+            type="date"
+            name="departing"
+            id="departing"
+            style="width: 150px"
+          />
+        </form>
+      </div>
+      <div class="containter-two-col">
+        <form action="">
+          <label for="returning" style="line-height: 2rem">
+            <strong>Returning</strong>
+          </label>
+          <br />
+          <input
+            type="date"
+            name="returning"
+            id="returning"
+            style="width: 150px"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="containter-four-col">
+        <form action="">
+          <label for="adult" style="line-height: 2rem">
+            <strong>Adult</strong>
+          </label>
+          <br />
+          <input
+            type="number"
+            id="adult"
+            name="adult"
+            min="0"
+            max="100"
+            value="0"
+            style="width: 75px"
+          />
+        </form>
+      </div>
+      <div class="containter-four-col">
+        <form action="">
+          <label for="child" style="line-height: 2rem">
+            <strong>Child</strong>
+          </label>
+          <br />
+          <input
+            type="number"
+            id="child"
+            name="child"
+            min="0"
+            max="100"
+            value="0"
+            style="width: 75px"
+          />
+        </form>
+      </div>
+      <div class="containter-four-col">
+        <form action="">
+          <label for="infant" style="line-height: 2rem">
+            <strong>Infant</strong>
+          </label>
+          <br />
+          <input
+            type="number"
+            id="infant"
+            name="infant"
+            min="0"
+            max="100"
+            value="0"
+            style="width: 75px"
+          />
+        </form>
+      </div>
+      <div class="containter-four-col">
+        <form action="">
+          <label for="currency" style="line-height: 2rem; color: orangered">
+            <strong>Currency</strong>
+          </label>
+          <br />
+          <select id="currency" name="currency" style="width: 75px">
+            <option value="PKR" selected>PKR</option>
+            <option value="THB">THB</option>
+            <option value="USD">USD</option>
+            <option value="JPY">JPY</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="containter-four-col">
+        <form action="">
+          <input
+            type="submit"
+            value="SEARCH"
+            style="
+              width: 100px;
+              height: 30px;
+              background-color: orangered;
+              border-radius: 5px;
+              color: white;
+              font-weight: bold;
+            "
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

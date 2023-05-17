@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      body > div {
+        padding: 20px 40px;
+      }
+
+      .main {
+        background-color: #f0f2f5;
+        min-height: 75vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .main div {
+        flex: 0 1 470px;
+        margin: 25px;
+      }
+      .col-left img {
+        height: 106px;
+        margin-left: -28px;
+      }
+      .col-left p {
+        font-size: 24px;
+        color: #1c1e21;
+      }
+      .col-left {
+        padding-top: 150px;
+      }
+      .col-right {
+        padding-top: 75px;
+      }
+
+      .form-container {
+        background-color: white;
+        min-height: 300px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgb(179, 179, 179);
+        padding: 20px;
+      }
+
+      .form-container form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-container input {
+        border: 1px solid grey;
+        border-radius: 5px;
+        min-height: 48px;
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+        padding-left: 16px;
+        font-size: 16px;
+      }
+      .form-container button {
+        flex: 1 1 100%;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #login-button {
+        min-height: 48px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        padding: 0px 16px;
+        background-color: #1877f2;
+      }
+
+      .form-container p {
+        color: #1877f2;
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      .form-container p:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .form-line {
+        border-bottom: 1px solid #dddfe2;
+        flex: 1 1 100%;
+        font-size: 1px;
+        margin: 5px 0px 25px 0px;
+      }
+
+      #signup-button {
+        width: 210px;
+        min-height: 48px;
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        padding: 0px 16px;
+        margin: auto;
+        background-color: #42b72a;
+      }
+
+      #create-page {
+        margin: 25px 5px;
+        text-align: center;
+        font-size: 15px;
+      }
+      #create-page-link {
+        font-weight: bold;
+      }
+
+      #create-page-link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .footer {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .footer-line {
+        font-size: 1px;
+        min-height: 1px;
+        min-width: 1px;
+        margin: 8px 0px;
+        background-color: #dddfe2;
+      }
+      .footer > ul,
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 5px;
+        color: #8a8d91;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .footer > ul,
+      li:hover {
+        text-decoration: underline;
+      }
+
+      .footer > div {
+        flex: 0 1 970px;
+        max-width: 970px;
+        padding-right: auto;
+      }
+
+      @media (max-width: 1120px) {
+        .main {
+          text-align: center;
+        }
+        .col-left {
+          padding-top: 0px;
+        }
+        .col-right {
+          padding-top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="col-left">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" />
+        <p>
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </div>
+      <div class="col-right">
+        <div class="form-container">
+          <form>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email address or phone number"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <button id="login-button">Log in</button>
+            <p>Forgotten password?</p>
+            <span class="form-line"></span>
+            <button id="signup-button">Create New Account</button>
+          </form>
+        </div>
+        <div id="create-page">
+          <span id="create-page-link">Create a Page</span> for a celebrity,
+          brand or business.
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="lang-selection">
+        <ul>
+          <li>English (UK)</li>
+          <li>ภาษาไทย</li>
+          <li>日本語</li>
+          <li>中文(简体)</li>
+          <li>Tiếng Việt</li>
+          <li>Français (France)</li>
+          <li>Deutsch</li>
+          <li>Русский</li>
+          <li>Español</li>
+          <li>Português (Brasil)</li>
+          <li>Italiano</li>
+        </ul>
+      </div>
+      <div class="footer-line"></div>
+      <div class="shortcut-link">
+        <ul>
+          <li>Sign Up</li>
+          <li>Log in</li>
+          <li>Messenger</li>
+          <li>Facebook Lite</li>
+          <li>Watch</li>
+          <li>Places</li>
+          <li>Games</li>
+          <li>Marketplace</li>
+          <li>Meta Pay</li>
+          <li>Oculus</li>
+          <li>Portal</li>
+          <li>Instagram</li>
+          <li>Bulletin</li>
+          <li>Fundraisers</li>
+          <li>Services</li>
+          <li>Voting Information Centre</li>
+          <li>Groups</li>
+          <li>About</li>
+          <li>Create ad</li>
+          <li>Create Page</li>
+          <li>Developers</li>
+          <li>Careers</li>
+          <li>Privacy Policy</li>
+          <li>Privacy Centre</li>
+          <li>Cookies</li>
+          <li>AdChoices<i class="img sp_ot1t5YjYL3s sx_708a0f"></i></li>
+          <li>Terms</li>
+          <li>Help</li>
+          <li>Contact uploading and non-users</li>
+          <li>Settings</li>
+          <li>Activity log</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

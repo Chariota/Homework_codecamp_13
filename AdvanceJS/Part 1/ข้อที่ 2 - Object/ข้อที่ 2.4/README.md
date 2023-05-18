@@ -1,27 +1,9 @@
 ### Codecamp # 13
     1. ชลัฐ ภัทรกิจจานุรักษ์
-    2. ให้ Object ชื่อ ladder มี method ขึ้นและลง
+    2. จงเขียนฟังก์ชัน sum(obj) ที่รับ obj ที่เก็บ prorperties โดยมี key เป็นชื่อพนักงานและมี value เป็นเงินเดือน ให้ฟังก์ชันคืนค่าเป็นผลรวมของเงินเดือนพนักงานทั้งหมด
 
-            let ladder = {
-                step: 0,
-                up() {
-                    this.step++;
-                },
-                down() {
-                    this.step--;
-                },
-                showStep: function() { // shows the current step
-                    alert( this.step );
-                }
-            };
-         
-         3. Object ชื่อ ladder สามารถเรียก function แบบนี้ได้
-        
-            ladder.up();
-            ladder.up();
-            ladder.down();
-            ladder.showStep(); // 1
-
-        4. ดัดแปลง Object ชื่อ ladder สามารถเรียก function แบบนี้ได้
-
-            ladder.up().up().down().showStep(); // 1
+            let salaries = {
+                John: 100,
+                Ann: 160,
+                Pete: 130
+            }; 

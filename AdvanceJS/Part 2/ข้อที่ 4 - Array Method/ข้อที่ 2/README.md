@@ -65,7 +65,7 @@
                     ] // filter คนเกิดเดือน 10
 
             2.12    array1 = [
-                    { name: "apple", birth: "2000-01-01" },ห
+                    { name: "apple", birth: "2000-01-01" },
                     { name: "banana", birth: "1990-10-01"  },
                     { name: "watermelon", birth: "1985-12-30" }
                     { name: "peach", birth: "2002-10-13" }
